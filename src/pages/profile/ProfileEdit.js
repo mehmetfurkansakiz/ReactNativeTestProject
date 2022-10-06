@@ -1,11 +1,11 @@
 import React from 'react';
-import {Text, View} from 'react-native';
+import {Text, SafeAreaView} from 'react-native';
 
 function ProfileEdit() {
   return (
-    <View>
+    <SafeAreaView>
       <Text>ProfileEdit Page</Text>
-    </View>
+    </SafeAreaView>
   );
 }
 

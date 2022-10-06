@@ -1,15 +1,15 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {SafeAreaView, Text, Button} from 'react-native';
 
 function MemberDetail({navigation}) {
   return (
-    <View>
+    <SafeAreaView>
       <Text>MemberDetail Tab</Text>
       <Button
         title="Update"
         onPress={() => navigation.navigate('MemberUpdateScreen')}
       />
-    </View>
+    </SafeAreaView>
   );
 }
 

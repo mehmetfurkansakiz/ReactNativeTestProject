@@ -1,15 +1,17 @@
 import React from 'react';
-import {View, Text, Button} from 'react-native';
+import {SafeAreaView, Text, Button} from 'react-native';
 
-function MemberUpdate(navigation) {
+function MemberUpdate({navigation}) {
   return (
-    <View>
+    <SafeAreaView>
       <Text>MemberUpdate Tab</Text>
       <Button
         title="Go Profile"
-        onPress={() => navigation.navigate('ProfileScreen')}
+        onPress={() =>
+          navigation.navigate('Profile', {screen: 'ProfileScreen'})
+        }
       />
-    </View>
+    </SafeAreaView>
   );
 }
 
